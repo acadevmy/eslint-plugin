@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --ext .ts"
+    "release": "semantic-release"
   },
   "keywords": [
     "ESLint",
@@ -30,14 +30,27 @@
   "license": "MIT",
   "author": ".devmy",
   "description": "This library exports ESLint configurations with the recommended rules from the Devmy team for TypeScript and popular frameworks like React, Angular or etc.... It helps ensure code quality, consistency, and maintainability across your projects.",
-  "repository": "https://github.com/acadevmy/eslint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acadevmy/eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acadevmy/eslint/issues"
+  },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "github:semantic-release/git",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
     "@types/node": "^22.10.1",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "semantic-release": "^24.0.0"
   }
 }
