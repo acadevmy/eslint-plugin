@@ -1,0 +1,17 @@
+{
+  "name": "devmy-eslint-plugins",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  }
+}
