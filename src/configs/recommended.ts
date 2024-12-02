@@ -17,7 +17,7 @@ export default {
     'curly': 'error',
     'default-case': 'error',
     'eqeqeq': 'error', 
-    'id-length': ['error', { 'min': 3, 'exceptions': ['x', 'y', 'z', 'i', 'j'] }],
+    'id-length': ['error', { 'min': 3, 'exceptions': ['x', 'y', 'z', 'i', 'j', 'id'] }],
     "max-classes-per-file": ["error", 2],
     'max-depth': ['error', 4],
     'max-lines': [1, { max: 150 }],
