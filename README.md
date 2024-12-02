@@ -1,11 +1,11 @@
-# devmy-eslint-plugins
+# @devmy/eslint
 
 This library provides ESLint configurations with the recommended rules from the Devmy team for TypeScript and popular frameworks like React, Angular. It helps you enforce consistent code style, avoid common pitfalls, and improve the overall quality and maintainability of your projects.
 
 ## Installation
 
 ```bash
-npm install --save-dev devmy-eslint-plugins
+npm install --save-dev @devmy/eslint
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ npm install --save-dev devmy-eslint-plugins
 // .eslintrc.js
 module.exports = {
   extends: [
-    'plugin:devmy-eslint-plugins/recommended'
+    'plugin:@devmy/eslint/recommended'
   ]
 };
 ```
@@ -27,7 +27,7 @@ module.exports = {
 // .eslintrc.js
 module.exports = {
   extends: [
-    'plugin:devmy-eslint-plugins/angular-recommended'
+    'plugin:@devmy/eslint/angular-recommended'
   ]
 };
 ```

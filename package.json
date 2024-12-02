@@ -1,5 +1,5 @@
 {
-  "name": "devmy-eslint-plugins",
+  "name": "@devmy/eslint",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
@@ -30,6 +30,7 @@
   "license": "MIT",
   "author": ".devmy",
   "description": "This library exports ESLint configurations with the recommended rules from the Devmy team for TypeScript and popular frameworks like React, Angular or etc.... It helps ensure code quality, consistency, and maintainability across your projects.",
+  "repository": "https://github.com/acadevmy/eslint",
   "devDependencies": {
     "@types/node": "^22.10.1",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
