@@ -45,10 +45,10 @@
   "description": "This library exports ESLint configurations with the recommended rules from the Devmy team for TypeScript and popular frameworks like React, Angular or etc.... It helps ensure code quality, consistency, and maintainability across your projects.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acadevmy/eslint.git"
+    "url": "git+https://github.com/acadevmy/eslint-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/acadevmy/eslint/issues"
+    "url": "https://github.com/acadevmy/eslint-plugin/issues"
   },
   "dependencies": {
     "@angular-eslint/eslint-plugin-template": "^18.0.0 || ^19.0.0",
