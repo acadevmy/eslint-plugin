@@ -1,11 +1,14 @@
-import recommendedConfig from './recommended';
-import tsEslint from "typescript-eslint";
-import angular from "angular-eslint";
 import ngrx from '@ngrx/eslint-plugin/v9'
+import angular from "angular-eslint";
+import tsEslint from "typescript-eslint";
+
+import { ignores } from '../utils';
+import recommendedConfig from './recommended';
 
 export default tsEslint.config(
   {
     name: "devmy-angular-ts-recommended",
+    ignores,
     files: ["**/*.ts"],
     extends: [
       ...ngrx.configs.all,
@@ -29,6 +32,9 @@ export default tsEslint.config(
           prefix: 'app',
           style: 'kebab-case',
         },
+      ],
+      "@angular-eslint/component-class-suffix": [
+        "error", { suffixes: ["Page", "Component"] }
       ],
     },
   },

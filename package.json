@@ -15,6 +15,8 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,html}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx,html}' --fix",
     "release": "semantic-release"
   },
   "keywords": [
@@ -49,15 +51,18 @@
     "url": "https://github.com/acadevmy/eslint/issues"
   },
   "dependencies": {
+    "@angular-eslint/eslint-plugin-template": "^18.0.0 || ^19.0.0",
     "@ngrx/eslint-plugin": "18.1.1",
+    "@stylistic/eslint-plugin-ts": "^2.11.0",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/utils": "^8.17.0",
-    "angular-eslint": "19.0.0",
-    "eslint": "^9.16.0",
+    "angular-eslint": "^18.0.0 || ^19.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-const-case": "^1.2.2",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.0",
+    "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "jiti": "^2.4.1",
     "typescript-eslint": "8.17.0"
@@ -74,5 +79,8 @@
     "semantic-release": "^24.0.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0 || ^9.0.0"
   }
 }
