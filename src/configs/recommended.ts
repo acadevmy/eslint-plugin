@@ -4,7 +4,6 @@ import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import sonar from "eslint-plugin-sonarjs";
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-import unusedImports from 'eslint-plugin-unused-imports';
 import tsEslint from 'typescript-eslint';
 
 import { ignores } from '../utils';
@@ -16,7 +15,6 @@ export default tsEslint.config({
     sonar,
     unicorn: eslintPluginUnicorn,
     'simple-import-sort': simpleImportSort,
-    'unused-imports': unusedImports,
     '@stylistic': stylisticTs
   },
   files: ['**/*.ts'],
@@ -55,10 +53,11 @@ export default tsEslint.config({
     'no-magic-numbers': [
       "error", 
       { 
+        "detectObjects": false,
         "ignoreArrayIndexes": true, 
         "ignoreDefaultValues": true, 
         "ignoreClassFieldInitialValues": true, 
-        "ignore": [0, 1] 
+        "ignore": [0, 1]
       }
     ],
     'no-multi-assign': 'error',
@@ -70,16 +69,6 @@ export default tsEslint.config({
     'simple-import-sort/imports': 'error',
     'yoda': 'error',
     'no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        'vars': 'all',
-        'varsIgnorePattern': '^_',
-        'args': 'after-used',
-        'argsIgnorePattern': '^_',
-      },
-    ],
     "unicorn/better-regex": "error",
     "unicorn/explicit-length-check": "error",
     "unicorn/no-abusive-eslint-disable": "error",
