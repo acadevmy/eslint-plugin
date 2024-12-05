@@ -16,6 +16,7 @@ const plugin = {
     'angular-recommended': angularRecommendedConfig,
     'angular-template-recommended': angularTemplateRecommendedConfig,
   },
+  rules: {}
 };
 
 export default plugin;
