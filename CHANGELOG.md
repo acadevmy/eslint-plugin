@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/acadevmy/eslint-plugin/compare/v1.0.0...v1.1.0) (2024-12-12)
+
+
+### Bug Fixes
+
+* configs type ([822bab7](https://github.com/acadevmy/eslint-plugin/commit/822bab7b58ea5ff59e40efdbd14e33045b5c738d))
+* missing prettier import in recommended ([5ecaef7](https://github.com/acadevmy/eslint-plugin/commit/5ecaef737bf3e70e0545637e14b53a12e44befc0))
+
+
+### Features
+
+* add unused imports ([c293283](https://github.com/acadevmy/eslint-plugin/commit/c293283c6af82f3437ac52e67121e24c88e0d169))
+
 # 1.0.0 (2024-12-05)
 
 
