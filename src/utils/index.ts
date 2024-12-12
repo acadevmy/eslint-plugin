@@ -1,1 +1,1 @@
-export * from './ignore-files-list';
+export * from "./ignore-files-list";
