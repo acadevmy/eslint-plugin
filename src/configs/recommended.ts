@@ -5,6 +5,7 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import sonar from "eslint-plugin-sonarjs";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
+import unusedImports from "eslint-plugin-unused-imports";
 import tsEslint from "typescript-eslint";
 
 import { ignores } from "../utils";
@@ -17,6 +18,7 @@ export default tsEslint.config({
     unicorn: eslintPluginUnicorn,
     "simple-import-sort": simpleImportSort,
     "@stylistic": stylisticTs,
+    "unused-imports": unusedImports,
   },
   files: ["**/*.ts"],
   extends: [
@@ -77,5 +79,15 @@ export default tsEslint.config({
     "unicorn/better-regex": "error",
     "unicorn/explicit-length-check": "error",
     "unicorn/no-abusive-eslint-disable": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        vars: "all",
+        varsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
+      },
+    ],
   },
 }) as FlatConfig.Config;
