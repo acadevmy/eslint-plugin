@@ -1,4 +1,5 @@
 import ngrx from "@ngrx/eslint-plugin/v9";
+import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 import angular from "angular-eslint";
 import tsEslint from "typescript-eslint";
 
@@ -37,4 +38,4 @@ export default tsEslint.config({
       { suffixes: ["Page", "Component"] },
     ],
   },
-});
+}) as FlatConfig.Config;

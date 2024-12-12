@@ -1,3 +1,4 @@
+import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 import angular from "angular-eslint";
 import tsEslint from "typescript-eslint";
 
@@ -15,4 +16,4 @@ export default tsEslint.config({
     "@angular-eslint/template/attributes-order": "error",
     "@angular-eslint/template/prefer-self-closing-tags": "error",
   },
-});
+}) as FlatConfig.Config;
