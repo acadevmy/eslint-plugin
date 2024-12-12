@@ -1,4 +1,4 @@
-export const ignores = [ 
+export const ignores = [
   "projects/**/*",
   "**/dist",
   "**/node_modules",
