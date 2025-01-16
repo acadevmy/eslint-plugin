@@ -86,5 +86,15 @@
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=9.15.0"
+  },
+  "pnpm": {
+    "executionEnv": {
+      "nodeVersion": "20.10.0"
+    }
   }
 }
