@@ -1,19 +1,19 @@
-import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
-import angular from "angular-eslint";
-import tsEslint from "typescript-eslint";
+import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
+import angular from 'angular-eslint';
+import tsEslint from 'typescript-eslint';
 
-import { ignores } from "../utils";
+import { ignores } from '../utils';
 
 export default tsEslint.config({
-  name: "devmy-angular-template-recommended",
+  name: 'devmy-angular-template-recommended',
   ignores,
-  files: ["**/*.html"],
+  files: ['**/*.html'],
   extends: [
     ...angular.configs.templateRecommended,
     ...angular.configs.templateAccessibility,
   ],
   rules: {
-    "@angular-eslint/template/attributes-order": "error",
-    "@angular-eslint/template/prefer-self-closing-tags": "error",
+    '@angular-eslint/template/attributes-order': 'error',
+    '@angular-eslint/template/prefer-self-closing-tags': 'error',
   },
 }) as FlatConfig.Config;
