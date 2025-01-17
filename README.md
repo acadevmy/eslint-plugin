@@ -63,12 +63,24 @@ module.exports = {
 };
 ```
 
+### Jest
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: [
+    'plugin:@devmy/eslint-plugin/jest-recommended'
+  ]
+};
+```
+
 ## Configurations
 
 - **recommended**: The base configuration for TypeScript projects.
 - **angular-recommended**: Extends the "recommended" configuration with rules specific to Angular projects.
 - **angular-template-recommended**: Provides recommended rules for Angular templates.
 - **cypress-recommended**: Provides recommended rules for Cypress projects.
+- **jest-recommended**: Provides recommended rules for jest tests.
 
 ## Contributing
 
