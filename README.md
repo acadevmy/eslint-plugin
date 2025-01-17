@@ -4,83 +4,65 @@ This library provides ESLint configurations with the recommended rules from the 
 
 ## Installation
 
+**npm:**
 ```bash
 npm install --save-dev @devmy/eslint-plugin
 ```
 
+**pnpm:**
+```bash
+pnpm add -D @devmy/eslint-plugin
+```
+
+**yarn**
+```bash
+yarn add --dev @devmy/eslint-plugin
+```
+
+**bun**
+```bash
+bun add -d @devmy/eslint-plugin
+```
+
+**Note:** If you installed ESLint globally then you must also install `@devmy/eslint-plugin` globally.
+
 ## Usage
 
-### Typescript
+If you're using flat configuration:
+
+With
+[flat configuration](https://eslint.org/docs/latest/use/configure/configuration-files),
+just import the plugin and away you go:
 
 ```js
 // .eslintrc.js
+const pluginDevmy = require('@devmy/eslint-plugin');
+
 module.exports = {
   extends: [
-    'plugin:@devmy/eslint-plugin/recommended'
+    pluginDevmy.configs.recommended
   ]
 };
 ```
 
-### Angular
+With legacy configuration, add `@devmy/eslint-plugin` to the plugins section of your `.eslintrc`
+configuration file:
 
-```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    'plugin:@devmy/eslint-plugin/angular-recommended'
-  ]
-};
-```
-
-### Angular with separate template configuration
-```js
-// eslint.config.js
-const tseslint = require("typescript-eslint");
-const devmy = require("@devmy/eslint-plugin");
-
-module.exports = tseslint.config(
-  {
-    files: ["**/*.ts"],
-    plugins: { "devmy": devmy },
-    extends: [devmy.configs["angular-recommended"]],
-  },
-  {
-    files: ["**/*.html"],
-    plugins: { "devmy": devmy },
-    extends: [devmy.configs["angular-template-recommended"]],
-  }
-);
-```
-
-### Cypress
-
-```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    'plugin:@devmy/eslint-plugin/cypress-recommended'
-  ]
-};
-```
-
-### Jest
-
-```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    'plugin:@devmy/eslint-plugin/jest-recommended'
-  ]
-};
+```json
+{
+  "extends": ["plugin:@devmy/eslint-plugin/recommended"]
+}
 ```
 
 ## Configurations
 
-- **recommended**: The base configuration for TypeScript projects.
-- **angular-recommended**: Extends the "recommended" configuration with rules specific to Angular projects.
-- **angular-template-recommended**: Provides recommended rules for Angular templates.
-- **cypress-recommended**: Provides recommended rules for Cypress projects.
-- **jest-recommended**: Provides recommended rules for jest tests.
+| **Configuration**          | **full name**                          | **Description**                                       |
+|-----------------------------|------------------------------------------|-------------------------------------------------------|
+| **recommended**            | `@devmy/eslint-plugin/recommended`      | The base configuration for TypeScript projects.      |
+| **angular-recommended**    | `@devmy/eslint-plugin/angular-recommended` | Extends the "recommended" configuration with rules specific to Angular projects. |
+| **angular-template-recommended** | `@devmy/eslint-plugin/angular-template-recommended` | Provides recommended rules for Angular templates.    |
+| **cypress-recommended**    | `@devmy/eslint-plugin/cypress-recommended` | Provides recommended rules for Cypress projects.     |
+| **jest-recommended**       | `@devmy/eslint-plugin/jest-recommended` | Provides recommended rules for jest tests.           |
 
 ## Contributing
 
