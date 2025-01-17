@@ -52,13 +52,23 @@ module.exports = tseslint.config(
 );
 ```
 
+### Cypress
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: [
+    'plugin:@devmy/eslint-plugin/cypress-recommended'
+  ]
+};
+```
 
 ## Configurations
 
 - **recommended**: The base configuration for TypeScript projects.
 - **angular-recommended**: Extends the "recommended" configuration with rules specific to Angular projects.
 - **angular-template-recommended**: Provides recommended rules for Angular templates.
-
+- **cypress-recommended**: Provides recommended rules for Cypress projects.
 
 ## Contributing
 
