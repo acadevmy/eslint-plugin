@@ -32,11 +32,35 @@ export default tsEslint.config({
     "@stylistic/space-before-blocks": "error",
     "@stylistic/padding-line-between-statements": [
       "error",
+      // Space after directive, es "use client"
+      { blankLine: "always", prev: "directive", next: "*" },
+      { blankLine: "any", prev: "directive", next: "directive" },
+
+      // Space before import
+      { blankLine: "always", prev: "import", next: "*" },
+      { blankLine: "any", prev: "import", next: "import" },
+
+      // Space before return
+      { blankLine: "always", prev: "*", next: "return" },
+
+      // Space before and after logic statements (if, while, for, etc.)
       {
         blankLine: "always",
         prev: "*",
-        next: "return",
+        next: ["if", "while", "for", "switch", "try"],
       },
+      {
+        blankLine: "always",
+        prev: ["if", "while", "for", "switch", "try"],
+        next: "*",
+      },
+
+      // Space before functions
+      { blankLine: "always", prev: "*", next: "function" },
+
+      // Space after blocks
+      { blankLine: "always", prev: "block-like", next: "*" },
+      { blankLine: "always", prev: "*", next: "block-like" },
     ],
     "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
     "@typescript-eslint/ban-ts-comment": 0,
