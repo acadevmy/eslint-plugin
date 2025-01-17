@@ -11,6 +11,9 @@ importers:
       '@angular-eslint/eslint-plugin-template':
         specifier: ^18.0.0 || ^19.0.0
         version: 18.4.3(@typescript-eslint/types@8.17.0)(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
+      '@eslint/js':
+        specifier: ^9.18.0
+        version: 9.18.0
       '@ngrx/eslint-plugin':
         specifier: 18.1.1
         version: 18.1.1(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
@@ -35,6 +38,9 @@ importers:
       eslint-plugin-const-case:
         specifier: ^1.2.2
         version: 1.2.2
+      eslint-plugin-cypress:
+        specifier: ^4.1.0
+        version: 4.1.0(eslint@9.16.0(jiti@2.4.1))
       eslint-plugin-prettier:
         specifier: ^5.2.1
         version: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@2.4.1)))(eslint@9.16.0(jiti@2.4.1))(prettier@3.4.2)
@@ -894,6 +900,10 @@ packages:
     resolution: {integrity: sha512-tw2HxzQkrbeuvyj1tG2Yqq+0H9wGoI2IMk4EOsQeX+vmd75FtJAzf+gTA69WF+baUKRYQ3x2kbLE08js5OsTVg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@eslint/js@9.18.0':
+    resolution: {integrity: sha512-fK6L7rxcq6/z+AaQMtiFTkvbHkBLNlwyRxHpKawP0x3u9+NC6MQTnFW+AdpwC6gfHTW0051cokQgtTN2FqlxQA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@eslint/object-schema@2.1.4':
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1739,6 +1749,11 @@ packages:
   eslint-plugin-const-case@1.2.2:
     resolution: {integrity: sha512-ON8VLOfGqXRW9Zck+lhgT5k6+jAW+lH7RRjH0YvA42trYhSq6Ayq8m3frqCJhlArDwfPKnjHVVyZhQurTDL3OQ==}
     engines: {node: '>=10'}
+
+  eslint-plugin-cypress@4.1.0:
+    resolution: {integrity: sha512-JhqkMY02mw74USwK9OFhectx3YSj6Co1NgWBxlGdKvlqiAp9vdEuQqt33DKGQFvvGS/NWtduuhWXWNnU29xDSg==}
+    peerDependencies:
+      eslint: '>=9'
 
   eslint-plugin-prettier@5.2.1:
     resolution: {integrity: sha512-gH3iR3g4JfF+yYPaJYkN7jEl9QbweL/YfkoRlNnuIEHEz1vHVlCmWOS+eGGiRuzHQXdJFCOTxRgvju9b8VUmrw==}
@@ -4420,6 +4435,8 @@ snapshots:
 
   '@eslint/js@9.16.0': {}
 
+  '@eslint/js@9.18.0': {}
+
   '@eslint/object-schema@2.1.4': {}
 
   '@eslint/plugin-kit@0.2.3':
@@ -5389,6 +5406,11 @@ snapshots:
   eslint-plugin-const-case@1.2.2:
     dependencies:
       requireindex: 1.2.0
+
+  eslint-plugin-cypress@4.1.0(eslint@9.16.0(jiti@2.4.1)):
+    dependencies:
+      eslint: 9.16.0(jiti@2.4.1)
+      globals: 15.13.0
 
   eslint-plugin-prettier@5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@2.4.1)))(eslint@9.16.0(jiti@2.4.1))(prettier@3.4.2):
     dependencies:

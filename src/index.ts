@@ -1,5 +1,6 @@
 import fs from "fs";
 
+import cypressRecommendedConfig from "./configs/cypress-recommended";
 import angularRecommendedConfig from "./configs/angular-recommended";
 import angularTemplateRecommendedConfig from "./configs/angular-template-recommended";
 import recommendedConfig from "./configs/recommended";
@@ -17,6 +18,7 @@ const plugin = {
     recommended: recommendedConfig,
     "angular-recommended": angularRecommendedConfig,
     "angular-template-recommended": angularTemplateRecommendedConfig,
+    "cypress-recommended": cypressRecommendedConfig,
   },
   rules: {},
 };
