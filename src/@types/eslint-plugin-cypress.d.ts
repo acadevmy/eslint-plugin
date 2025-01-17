@@ -1,4 +1,4 @@
-declare module "eslint-plugin-cypress" {
+declare module "eslint-plugin-cypress/flat" {
   import type { Linter } from "eslint";
 
   interface CypressRules {
@@ -18,10 +18,12 @@ declare module "eslint-plugin-cypress" {
     recommended: Linter.Config;
   }
 
+  import { type ConfigWithExtends } from "typescript-eslint";
+
   const plugin: {
     rules: CypressRules;
     configs: CypressConfigs;
-  };
+  } & ConfigWithExtends;
 
   export = plugin;
 }

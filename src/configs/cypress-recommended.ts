@@ -1,5 +1,5 @@
 import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
-import cypress from "eslint-plugin-cypress";
+import cypress from "eslint-plugin-cypress/flat";
 import tsEslint from "typescript-eslint";
 
 import { ignores } from "../utils";
