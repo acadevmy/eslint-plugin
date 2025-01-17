@@ -1,15 +1,15 @@
-import ngrx from "@ngrx/eslint-plugin/v9";
-import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
-import angular from "angular-eslint";
-import tsEslint from "typescript-eslint";
+import ngrx from '@ngrx/eslint-plugin/v9';
+import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
+import angular from 'angular-eslint';
+import tsEslint from 'typescript-eslint';
 
-import { ignores } from "../utils";
-import recommendedConfig from "./recommended";
+import { ignores } from '../utils';
+import recommendedConfig from './recommended';
 
 export default tsEslint.config({
-  name: "devmy-angular-ts-recommended",
+  name: 'devmy-angular-ts-recommended',
   ignores,
-  files: ["**/*.ts"],
+  files: ['**/*.ts'],
   extends: [
     ...ngrx.configs.all,
     ...angular.configs.tsRecommended,
@@ -17,25 +17,25 @@ export default tsEslint.config({
   ],
   processor: angular.processInlineTemplates,
   rules: {
-    "@angular-eslint/directive-selector": [
-      "error",
+    '@angular-eslint/directive-selector': [
+      'error',
       {
-        type: "attribute",
-        prefix: "app",
-        style: "camelCase",
+        type: 'attribute',
+        prefix: 'app',
+        style: 'camelCase',
       },
     ],
-    "@angular-eslint/component-selector": [
-      "error",
+    '@angular-eslint/component-selector': [
+      'error',
       {
-        type: "element",
-        prefix: "app",
-        style: "kebab-case",
+        type: 'element',
+        prefix: 'app',
+        style: 'kebab-case',
       },
     ],
-    "@angular-eslint/component-class-suffix": [
-      "error",
-      { suffixes: ["Page", "Component"] },
+    '@angular-eslint/component-class-suffix': [
+      'error',
+      { suffixes: ['Page', 'Component'] },
     ],
   },
 }) as FlatConfig.Config;
