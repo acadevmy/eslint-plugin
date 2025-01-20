@@ -64,6 +64,20 @@ configuration file:
 | **cypress-recommended**    | `@devmy/eslint-plugin/cypress-recommended` | Provides recommended rules for Cypress projects.     |
 | **jest-recommended**       | `@devmy/eslint-plugin/jest-recommended` | Provides recommended rules for jest tests.           |
 
+
+### Rules
+
+**Key**
+
+- :white_check_mark: = recommended
+- :wrench: = fixable
+- :bulb: = has suggestions
+
+| **Rule**                | **Description** | :white_check_mark: | :wrench: | :bulb: |
+|-------------------------| --- | --- | --- | --- |
+| `prefer-class-bindings` | Ensures the usage of class bindings instead of ngClass for elements |  |  |  |
+
+
 ## Contributing
 
 We welcome contributions to this project! If you find any issues or have suggestions for new rules or configurations, please open an issue or submit a pull request.

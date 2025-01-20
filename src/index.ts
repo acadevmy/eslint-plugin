@@ -5,6 +5,7 @@ import angularTemplateRecommendedConfig from './configs/angular-template-recomme
 import cypressRecommendedConfig from './configs/cypress-recommended';
 import jestRecommendedConfig from './configs/jest-recommended';
 import recommendedConfig from './configs/recommended';
+import preferClassBindings from './rules/prefer-class-bindings';
 
 const pkg: Record<string, string> = JSON.parse(
   fs.readFileSync('./package.json', 'utf8'),
@@ -22,7 +23,9 @@ const plugin = {
     'cypress-recommended': cypressRecommendedConfig,
     'jest-recommended': jestRecommendedConfig,
   },
-  rules: {},
+  rules: {
+    'prefer-class-bindings': preferClassBindings,
+  },
 };
 
 export default plugin;
