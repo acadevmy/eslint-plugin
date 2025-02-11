@@ -1,15 +1,19 @@
-import { convertAnnotatedSourceToFailureCase, RuleTester } from '@angular-eslint/test-utils';
+import {
+  convertAnnotatedSourceToFailureCase,
+  RuleTester,
+} from '@angular-eslint/test-utils';
 import { InvalidTestCase, ValidTestCase } from '@typescript-eslint/rule-tester';
-import { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
+import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
+
 import rule, { MessageIds, Options } from '../../rules/prefer-class-bindings';
 
 const messageId: MessageIds = 'avoidNgClass';
 
-export const valid: readonly (string | ValidTestCase<Options>)[] = [
-  '<div [class.test]="someCondition"></div>'
+export const valid: ReadonlyArray<string | ValidTestCase<Options>> = [
+  '<div [class.test]="someCondition"></div>',
 ];
 
-export const invalid: readonly InvalidTestCase<MessageIds, Options>[] = [
+export const invalid: ReadonlyArray<InvalidTestCase<MessageIds, Options>> = [
   convertAnnotatedSourceToFailureCase({
     description: 'should fail when using ngClass',
     annotatedSource: `
@@ -17,9 +21,7 @@ export const invalid: readonly InvalidTestCase<MessageIds, Options>[] = [
            ^^^^^^^^^^^^^^^^^^^^^^^^^
       </div>
     `,
-    messages: [
-      {char: '^', messageId},
-    ],
+    messages: [{ char: '^', messageId }],
   }),
 ];
 
