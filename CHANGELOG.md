@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/acadevmy/eslint-plugin/compare/v1.2.0...v1.3.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* eslint errors ([ecfafb6](https://github.com/acadevmy/eslint-plugin/commit/ecfafb676ea458060280e5872478122fc2400f1d))
+
+
+### Features
+
+* add custom rule prefer-class-bindings ([f00c3d2](https://github.com/acadevmy/eslint-plugin/commit/f00c3d226546fb56c0face45211a5a0cb2a39a30))
+
 # [1.2.0](https://github.com/acadevmy/eslint-plugin/compare/v1.1.0...v1.2.0) (2025-01-17)
 
 
