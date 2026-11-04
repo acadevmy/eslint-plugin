@@ -29,7 +29,7 @@ export default createRule<Options, MessageIds>({
     const parserServices = getTemplateParserServices(context);
 
     return {
-      Element$1(element: TmplAstElement): void {
+      Element(element: TmplAstElement): void {
         const ngClassAttribute = hasNgClassAttribute(element);
 
         if (!ngClassAttribute) {

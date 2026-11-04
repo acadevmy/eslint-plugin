@@ -56,55 +56,56 @@
     "url": "https://github.com/acadevmy/eslint-plugin/issues"
   },
   "dependencies": {
-    "@angular-eslint/eslint-plugin-template": "^18.0.0 || ^19.0.0",
-    "@angular-eslint/test-utils": "^19.0.0",
-    "@angular/compiler": "^19.0.0",
-    "@eslint/js": "^9.18.0",
-    "@ngrx/eslint-plugin": "18.1.1",
-    "@stylistic/eslint-plugin-ts": "^2.11.0",
-    "@typescript-eslint/eslint-plugin": "^8.16.0",
-    "@typescript-eslint/rule-tester": "^8.20.0",
-    "@typescript-eslint/utils": "^8.17.0",
-    "angular-eslint": "^18.0.0 || ^19.0.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@angular-eslint/eslint-plugin-template": "^22.6.0",
+    "@angular-eslint/test-utils": "^22.6.0",
+    "@angular/compiler": "^22.2.4",
+    "@eslint/js": "^9.39.5",
+    "@ngrx/eslint-plugin": "^22.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.72.1",
+    "@typescript-eslint/rule-tester": "^8.72.1",
+    "@typescript-eslint/utils": "^8.72.1",
+    "angular-eslint": "^22.6.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-const-case": "^1.2.2",
-    "eslint-plugin-cypress": "^4.1.0",
-    "eslint-plugin-jest": "^28.11.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sonarjs": "^3.0.0",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "eslint-plugin-unused-imports": "^4.1.4",
-    "jiti": "^2.4.1",
-    "typescript-eslint": "8.17.0"
+    "eslint-plugin-cypress": "^6.4.4",
+    "eslint-plugin-jest": "^29.17.0",
+    "eslint-plugin-prettier": "^5.5.7",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "eslint-plugin-sonarjs": "^4.2.2",
+    "eslint-plugin-unicorn": "^65.0.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "jiti": "^2.7.0",
+    "typescript-eslint": "^8.72.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "github:semantic-release/git",
-    "@semantic-release/npm": "^12.0.1",
-    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^11.0.1",
+    "@semantic-release/github": "^12.0.10",
+    "@semantic-release/npm": "^13.2.0",
+    "@semantic-release/release-notes-generator": "^14.1.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.10.1",
-    "jest": "^29.7.0",
-    "semantic-release": "^24.0.0",
-    "ts-jest": "^29.2.5",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.5",
+    "jest": "^30.5.2",
+    "semantic-release": "^25.0.9",
+    "ts-jest": "^29.4.15",
     "ts-node": "^10.9.2",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^8.57.0 || ^9.0.0"
+    "eslint": "^9.38.0 || ^10.0.0"
   },
   "packageManager": "pnpm@9.15.4",
   "engines": {
-    "node": ">=20.10.0",
+    "node": "^22.22.3 || >=24.15.0",
     "pnpm": ">=9.15.0"
   },
   "pnpm": {
     "executionEnv": {
-      "nodeVersion": "20.10.0"
+      "nodeVersion": "22.22.3"
     }
   }
 }

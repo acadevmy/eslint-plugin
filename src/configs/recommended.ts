@@ -1,9 +1,9 @@
 import eslint from '@eslint/js';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylistic from '@stylistic/eslint-plugin';
 import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import sonar from 'eslint-plugin-sonarjs';
+import sonar, { configs as sonarConfigs } from 'eslint-plugin-sonarjs';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import unusedImports from 'eslint-plugin-unused-imports';
 import tsEslint from 'typescript-eslint';
@@ -17,13 +17,13 @@ export default tsEslint.config({
     sonar,
     unicorn: eslintPluginUnicorn,
     'simple-import-sort': simpleImportSort,
-    '@stylistic': stylisticTs,
+    '@stylistic': stylistic,
     'unused-imports': unusedImports,
   },
   files: ['**/*.ts'],
   extends: [
     eslint.configs.recommended,
-    sonar.configs.recommended,
+    sonarConfigs.recommended,
     ...tsEslint.configs.recommended,
     ...tsEslint.configs.stylistic,
     eslintPluginPrettierRecommended,

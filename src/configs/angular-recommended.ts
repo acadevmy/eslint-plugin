@@ -1,4 +1,4 @@
-import ngrx from '@ngrx/eslint-plugin/v9';
+import ngrx from '@ngrx/eslint-plugin';
 import { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import angular from 'angular-eslint';
 import tsEslint from 'typescript-eslint';
@@ -11,10 +11,15 @@ export default tsEslint.config({
   ignores,
   files: ['**/*.ts'],
   extends: [
-    ...ngrx.configs.all,
+    ...ngrx.configs.allTypeChecked,
     ...angular.configs.tsRecommended,
     recommendedConfig,
   ],
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+    },
+  },
   processor: angular.processInlineTemplates,
   rules: {
     '@angular-eslint/directive-selector': [
