@@ -6,7 +6,6 @@ This library provides ESLint configurations with the recommended rules from the 
 
 - ESLint `^9.38.0` or `^10.0.0` (flat config)
 - Node.js `^22.22.3` or `>=24.15.0`
-- For the Angular configurations: Angular 22 (`angular-eslint` 22)
 
 ## Installation
 
